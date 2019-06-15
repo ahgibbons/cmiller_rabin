@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"tr",
+				"trial_composite"
+			],
+			[
+				"b",
+				"stdbool.h\tstandard header (since c99)"
+			],
+			[
 				"K",
 				"K2"
 			],
@@ -18,10 +26,6 @@
 			[
 				"wo",
 				"wordbuffer2"
-			],
-			[
-				"b",
-				"bytestowords"
 			],
 			[
 				"prt",
@@ -168,14 +172,31 @@
 	"buffers":
 	[
 		{
-			"contents": "#include <stdio.h>\n\nint main(int argc, char const *argv[])\n{\n\t/* code */\n\treturn 0;\n}\n\nbool mr_test(int n, int numtests, int seed) {\n\tbool isprime = true;\n\tfor (int i = 0; i < numtests; ++i)\n\t{\n\t\t\n\t}:\n\n\treturn false;\n}\n\n",
 			"file": "miller_rabin.c",
-			"file_size": 218,
-			"file_write_time": 132044730228871380,
 			"settings":
 			{
-				"buffer_size": 220,
+				"buffer_size": 1701,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "makefile",
+			"settings":
+			{
+				"buffer_size": 58,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "andrewsim|08:32:25|~> ls\nAvogadro     Desktop    examples.desktop  Gromacs_learning  miniconda.sh  OpenFOAM      pymol                   #simenv.py#     timestamp.sh\nblender      Documents  FDTD_solutions    Haskell           msgpack-c     password.txt  pymol-v1.8.6.0.tar.bz2  speedcheck      transmitter\nC            Downloads  github            LAMMPS            Music         PDB_files     pymol_viewer            Standing_Wave   Videos\ncppprojects  Dropbox    gourmet           latex             numpy-dev     Pictures      python                  Templates       vlc-log.txt\ncprojects    eng_man    gourmetterm       log.lammps        OCTA81        Public        rustprojects            tensorflow      VMD\ndat_man      Engys      Gromacs           meep              openFOAM      PyLammps      security                tensorflow-dev  workspace\nandrewsim|08:32:31|~> \nandrewsim|00:08:12|~> \nandrewsim|22:21:06|~> \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+			"settings":
+			{
+				"buffer_size": 959,
+				"line_ending": "Unix",
+				"name": "Login Shell",
+				"scratch": true
 			}
 		}
 	],
@@ -327,8 +348,32 @@
 		"selected_items":
 		[
 			[
+				"terminus",
+				"Terminus: Open Default Shell in View"
+			],
+			[
+				"term",
+				"Terminus: Close"
+			],
+			[
 				"pack",
 				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"git sta",
+				"Git: Status"
 			],
 			[
 				"packag",
@@ -459,23 +504,34 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 220,
+						"buffer_size": 1701,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								220,
-								220
+								1467,
+								1467
 							]
 						],
 						"settings":
 						{
+							"SL.21.region_keys":
+							[
+							],
 							"SL.25.region_keys":
 							[
 							],
-							"syntax": "Packages/C++/C.sublime-syntax"
+							"SL.30.region_keys":
+							[
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -483,7 +539,118 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								925,
+								925
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": true,
+							"auto_complete": false,
+							"auto_complete_commit_on_tab": false,
+							"bracket_highlighter.clone_locations":
+							{
+							},
+							"bracket_highlighter.ignore": true,
+							"caret_style": "blink",
+							"color_scheme": "Terminus.sublime-color-scheme",
+							"draw_centered": false,
+							"draw_indent_guides": false,
+							"draw_white_space": "none",
+							"gutter": false,
+							"highlight_line": false,
+							"incomplete_sync": null,
+							"is_widget": true,
+							"scroll_past_end": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"terminus.highlight_counter": 48,
+							"terminus_view": true,
+							"terminus_view.args":
+							{
+								"auto_close": true,
+								"cmd":
+								[
+									"/bin/bash",
+									"-i",
+									"-l"
+								],
+								"config_name": "Login Shell",
+								"cwd": "/home/andrewsim",
+								"env":
+								{
+									"LANG": "en_US.UTF-8",
+									"TERM": "linux",
+									"TERMINUS_SUBLIME": "1",
+									"TERM_PROGRAM": "Terminus-Sublime"
+								},
+								"panel_name": null,
+								"tag": null,
+								"title": null
+							},
+							"terminus_view.key.ctrl+k": true,
+							"terminus_view.key.ctrl+p": true,
+							"terminus_view.natural_keyboard": true,
+							"terminus_view.panel_name": null,
+							"terminus_view.tag": null,
+							"terminus_view.viewport_y": 144.0,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -504,11 +671,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -530,7 +704,19 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/Rust Enhanced/RustEnhanced.sublime-build",
+	"output.git-commit":
+	{
+		"height": 126.0
+	},
+	"output.git-init":
+	{
+		"height": 126.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/C++/C Single File.sublime-build",
 	"project": "miller_rabin.sublime-project",
 	"replace":
 	{
