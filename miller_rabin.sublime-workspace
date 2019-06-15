@@ -175,7 +175,7 @@
 			"file": "miller_rabin.c",
 			"settings":
 			{
-				"buffer_size": 1701,
+				"buffer_size": 1703,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -504,15 +504,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1701,
+						"buffer_size": 1703,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1467,
-								1467
+								1496,
+								1496
 							]
 						],
 						"settings":

@@ -51,6 +51,43 @@ bool trial_composite(int n, int d, int r, int a) {
   return true;
 }
 
+bool mr_test(mpz_t n, int numtests) {
+  if (mpz_divisible_ui_p(n,2)) {
+    printf("Error: %d is even\n", n);
+    return -1;
+  }
+  if (mpz_cmp_ui(n, 3) < 0) {
+    printf("Error: Value of %d is expected to be > 3.\n", n);
+    return -1;
+  }
+
+
+  mpz_t d;
+  mpz_t r;
+  mpz_init(d);
+  mpz_sub_ui(d,n,1);
+  mpz_init_set_ui(r,0);
+
+  // Decompose into d*2^r + 1 = n
+  while (mpz_divisible_ui_p(d,2)) {
+    d >>= 1;
+    r++;
+  }
+
+  int a;
+  for (int k=0; k<numtests; k++) {
+    a = randR(2,n-2);
+    if (trial_composite(n,d,r,a)) {
+      return false;
+    }
+    
+  }
+
+  mpz_clear(d);
+
+  return true;
+}
+
 bool mr_test_int(int n, int numtests) {
   if (n % 2 == 0) {
     printf("Error: %d is even\n", n);
@@ -83,18 +120,32 @@ bool mr_test_int(int n, int numtests) {
 }
 
 
+void test_add(mpz_t n) {
+  mpz_add_ui(n,n,1);
+}
 
-int main(){
+int main(int argc, char *argv[]){
   srand(time(NULL));
 
-
-  //  b = 4, e = 13, and m = 497 
-  int t = mexp(4, 13, 497);
-  //printf("Mexp %d\n", t);
-
+  
+  mpz_t n;
+  int flag;
+  mpz_init(n);
+  mpz_set_ui(n,0);
+  flag = mpz_set_str(n, argv[1], 10);
+  assert(flag==0);
+  printf("n = ");
+  mpz_out_str(stdout,10,n);
+  printf("\n");
+  test_add(n);
+  printf("n + 1 = ");
+  mpz_out_str(stdout, 10, n);
+  printf("\n");
+  
+  /*
   bool p;
-  for (int i=2001; i<2030;i+=2) {
-    p = mr_test_int(i, 10);
+  for (int i=10001; i<10040;i+=2) {
+    p = mr_test_int(n, 10);
     if (p) {
       printf("  %d is Prime\n", i);
     }
@@ -102,6 +153,9 @@ int main(){
       printf("  %d is Not prime\n", i);
     }
   }
+  */
+
+  mpz_clear(n);
 	return 0;
 }
 
